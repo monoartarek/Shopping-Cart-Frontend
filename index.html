@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BoiPorua - Online Bookstore</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">📚 BoiPorua</div>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+
+      <div class="icons">
+        <i class="fas fa-user"></i>
+        <div class="cart-wrapper">
+          <i id="cart-icon" class="fas fa-shopping-cart"></i>
+          <span id="cart-count">0</span>
+        </div>
+      </div>
+
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Cart Sidebar -->
+  <div class="cart">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="close-cart">&times;</button>
+    </div>
+    <div class="cart-items"></div>
+    <div class="cart-total">
+      <strong>Total: </strong> <span id="total-price">0</span>৳
+    </div>
+  </div>
+
+  <!-- Toast Message -->
+  <div id="toast"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to BoiPorua</h1>
+    <p>Buy your favorite books with ease</p>
+  </section>
+
+  <!-- Products -->
+  <section class="products">
+    <div class="product" data-id="1" data-name="The Names" data-price="350">
+      <img src="images/img_1.jpeg" alt="Book">
+      <h3>The Names</h3>
+      <p>350৳</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product" data-id="2" data-name="Sesh Lekha" data-price="450">
+      <img src="images/book2.jpg" alt="Book">
+      <h3>Sesh Lekha</h3>
+      <p>450৳</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product" data-id="3" data-name="Python for Beginners" data-price="500">
+      <img src="https://dummyimage.com/150x200/2e7d32/fff&text=Python+Book" alt="Book">
+      <h3>Python for Beginners</h3>
+      <p>500৳</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="1" data-name="Programming in C" data-price="350">
+      <img src="https://dummyimage.com/150x200/4caf50/fff&text=C+Book" alt="Book">
+      <h3>Programming in C</h3>
+      <p>350৳</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product" data-id="2" data-name="Learn JavaScript" data-price="450">
+      <img src="https://dummyimage.com/150x200/388e3c/fff&text=JS+Book" alt="Book">
+      <h3>Learn JavaScript</h3>
+      <p>450৳</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product" data-id="3" data-name="Python for Beginners" data-price="500">
+      <img src="https://dummyimage.com/150x200/2e7d32/fff&text=Python+Book" alt="Book">
+      <h3>Python for Beginners</h3>
+      <p>500৳</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="1" data-name="Programming in C" data-price="350">
+      <img src="https://dummyimage.com/150x200/4caf50/fff&text=C+Book" alt="Book">
+      <h3>Programming in C</h3>
+      <p>350৳</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product" data-id="2" data-name="Learn JavaScript" data-price="450">
+      <img src="https://dummyimage.com/150x200/388e3c/fff&text=JS+Book" alt="Book">
+      <h3>Learn JavaScript</h3>
+      <p>450৳</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product" data-id="3" data-name="Python for Beginners" data-price="500">
+      <img src="https://dummyimage.com/150x200/2e7d32/fff&text=Python+Book" alt="Book">
+      <h3>Python for Beginners</h3>
+      <p>500৳</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product" data-id="1" data-name="Programming in C" data-price="350">
+      <img src="https://dummyimage.com/150x200/4caf50/fff&text=C+Book" alt="Book">
+      <h3>Programming in C</h3>
+      <p>350৳</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product" data-id="2" data-name="Learn JavaScript" data-price="450">
+      <img src="https://dummyimage.com/150x200/388e3c/fff&text=JS+Book" alt="Book">
+      <h3>Learn JavaScript</h3>
+      <p>450৳</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <div class="product" data-id="3" data-name="Python for Beginners" data-price="500">
+      <img src="https://dummyimage.com/150x200/2e7d32/fff&text=Python+Book" alt="Book">
+      <h3>Python for Beginners</h3>
+      <p>500৳</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 BoiPorua | All Rights Reserved</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
