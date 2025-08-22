@@ -221,6 +221,9 @@ footer {
   padding: 20px;
   margin-top: 40px;
 }
+footer .socials{
+  padding:20px;
+}
 
 footer .socials a {
   color: white;
